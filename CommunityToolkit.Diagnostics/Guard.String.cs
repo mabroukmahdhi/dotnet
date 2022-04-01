@@ -363,7 +363,7 @@ partial class Guard
     /// <param name="value">The input <see cref="string"/> value to test.</param>
     /// <param name="regexPattern">The Regular expression which must be not matched by the <typeparamref name="T" />.</param>
     /// <param name="name">The name of the input parameter being tested.</param>
-    /// <exception cref="ArgumentException">Thrown if <paramref name="value"/> match <paramref name="regexPattern"/>.</exception>
+    /// <exception cref="ArgumentException">Thrown if <paramref name="value"/> matches <paramref name="regexPattern"/>.</exception>
     /// <remarks>The method is generic to prevent using it with value types.</remarks>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static void NotMatch(string value, string regexPattern, [CallerArgumentExpression("value")] string name = "")
